@@ -157,17 +157,16 @@
                         <td colspan="2"><strong>ECD_QR</strong><br />' + (feature.properties['ECD_QR'] !== null ? autolinker.link(feature.properties['ECD_QR'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Principal'] !== null ? autolinker.link(feature.properties['Principal'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Contact</strong><br />' + (feature.properties['Contact'] !== null ? autolinker.link(feature.properties['Contact'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Con_Name'] !== null ? autolinker.link(feature.properties['Con_Name'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Con_Naam'] !== null ? autolinker.link(feature.properties['Con_Naam'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Contact</th>\
-                        <td>' + (feature.properties['Contact'] !== null ? autolinker.link(feature.properties['Contact'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Phone_No'] !== null ? autolinker.link(feature.properties['Phone_No'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Locate_Me</strong><br />' + (feature.properties['Locate_Me'] !== null ? autolinker.link(feature.properties['Locate_Me'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Directions</strong><br />' + (feature.properties['Directions'] !== null ? autolinker.link(feature.properties['Directions'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
